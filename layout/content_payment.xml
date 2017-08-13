@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.abhishek.restoran.Payment"
+    tools:showIn="@layout/activity_payment">
+
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="Choose Your Payment Option"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv0"
+        android:layout_alignStart="@+id/tv0"
+        android:layout_below="@+id/tv0"
+        android:layout_marginTop="33dp"
+        android:fontFamily="cursive"
+        android:text="Meal-"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv2"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_toEndOf="@+id/tv6"
+        android:layout_toRightOf="@+id/tv6"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv"
+        android:layout_alignStart="@+id/tv"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:text="Quantity-"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv2"
+        android:layout_alignBottom="@+id/tv2"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignStart="@+id/tv1"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_alignStart="@+id/tv2"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="34dp"
+        android:fontFamily="cursive"
+        android:text="Price-"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv4"
+        android:layout_alignBottom="@+id/tv4"
+        android:layout_alignLeft="@+id/tv3"
+        android:layout_alignStart="@+id/tv3"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv4"
+        android:layout_alignRight="@+id/tv4"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="19dp"
+        android:fontFamily="cursive"
+        android:text="Amount to be Paid-"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg"
+        android:layout_alignLeft="@+id/tv5"
+        android:layout_alignStart="@+id/tv5"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv6">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:onClick="onClickListener"
+            android:text="Net Banking" />
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rb1" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp1"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickListener"
+            android:text="Debit Card" />
+
+        <Spinner
+            android:id="@+id/sp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rb2" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp2"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickListener"
+            android:text="COD" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/paybt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Pay"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tv7"
+        android:layout_alignStart="@+id/tv7"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+</RelativeLayout>
