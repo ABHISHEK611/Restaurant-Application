@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/et"
+        android:hint="Quantity"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:text="Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv1"
+        android:fontFamily="cursive"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:drawableLeft="@drawable/rupeeimages"
+        android:drawablePadding="16dp" />
+
+    <TextView
+        android:text="MealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp" />
+</RelativeLayout>

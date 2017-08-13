@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/restoran6"
+        android:duration="2000"
+        />
+    <item
+        android:drawable="@drawable/restoran7"
+        android:duration="2000"
+        />
+    <item
+        android:drawable="@drawable/restoran8"
+        android:duration="2000"
+        />
+    <item
+        android:drawable="@drawable/restoran9"
+        android:duration="2000"
+        />
+    <item
+        android:drawable="@drawable/restoran10"
+        android:duration="2000"
+        />
+</animation-list>
